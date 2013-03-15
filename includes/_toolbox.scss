@@ -1,0 +1,82 @@
+/*------------------------------------*\
+    Utilities
+\*------------------------------------*/
+.clr {clear:both;}
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.text-center {text-align:center;}
+.text-right {text-align:right;}
+.text-left {text-align:left;}
+.float-center {float:none; margin-left:auto; margin-right:auto;}
+.float-right {float:right;}
+.float-left {float:left;}
+
+.mobile-only {display:block;}
+.desktop-only {display:none;}
+@media screen and (min-width: 768px) {
+	.mobile-only {display:none;}
+	.desktop-only {display:block;}
+}
+
+.indented-text {clear: both; padding:1em 8% 3em 8%;}
+
+#bravodms-logo {max-width:200px; max-height:20px;}
+
+.desaturate { filter: grayscale(100%);
+-webkit-filter: grayscale(100%);
+-moz-filter: grayscale(100%);
+-ms-filter: grayscale(100%);
+-o-filter: grayscale(100%);
+}
+.desaturate:hover { filter: grayscale(0%);
+-webkit-filter: grayscale(0%);
+-moz-filter: grayscale(0%);
+-ms-filter: grayscale(0%);
+-o-filter: grayscale(0%);
+}
+
+
+/*------------------------------------*\
+    BravoDMS Footer
+\*------------------------------------*/
+
+#copyright { 
+	padding-top:2em; padding-bottom:3em;
+
+	.date, .logo {text-align:center; margin-bottom:1em;}
+	@media screen and (min-width: 768px) {
+		.date {text-align:left;}
+		.logo {text-align:right;}
+	}
+}
+
+
+/*------------------------------------*\
+    Facebook Comment Form
+\*------------------------------------*/
+
+#fbcomments,.fb_iframe_widget,.fb_iframe_widget[style],.fb_iframe_widget iframe[style],.fbcomments iframe[style],.fb_iframe_widget span {width: 100% !important;}
+
+
+/*------------------------------------*\
+    Jetpack Subscribe Form
+\*------------------------------------*/
+
+.jetpack_subscription_widget {
+	font-size:.75em;
+	
+	a {display:none;}
+	input {padding:.5em !important; @extend .roundedcorners-smallest; font-family: Century Gothic !important; font-size:1.2em !important; color:#999 !important;}
+	.success {color: #f60;}
+	input[type=submit] {@extend .button; @extend .roundedcorners-small; width:100%; float:right; font-size:.9em !important; margin-bottom:2.5em; padding: .25em 1em !important;}
+	p:last {margin:0 !important; padding:0 !important;}
+}
+.jetpack_subscription_widget:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+

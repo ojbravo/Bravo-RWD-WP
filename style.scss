@@ -1,0 +1,79 @@
+@charset "UTF-8";
+
+/*
+Theme Name: Journey Notes
+Theme URI: http://www.bravodms.com/
+Author: Omar J. Bravo (@ojbravo)
+Author URI: http://www.bravodms.com/
+Version: 1.3
+Description: Life is a Journey!
+*/
+
+
+/*------------------------------------*\
+    Responsive Wordpress Site Framework
+	author: Omar Jesus Bravo
+	@ojbravo, www.bravodms.com
+\*------------------------------------*/
+
+/*------------------------------------*\
+    Initial CSS Files
+\*------------------------------------*/
+@import "includes/_reset";
+@import "compass";
+@import "includes/_bravo-grid-v16";
+
+
+/*------------------------------------*\
+    Variables & Mixins
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    Dependant CSS Files
+\*------------------------------------*/
+@import "includes/_toolbox";
+@import "includes/_typography";
+@import "includes/_bravo-menu-v5";
+@import "includes/_font-awesome";
+
+/*------------------------------------*\
+    Images
+\*------------------------------------*/
+img {max-width:100%; height:auto !important;}
+
+#dms-logo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
+@media screen and (min-width: 768px){
+  #dms-logo{margin:.6em 0;}
+}
+
+a#dms-menu-logo {padding-left:1.25em; font-size:1.5em;}
+#dms-menu-logo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
+#dms-logo a:hover {background-color:inherit;}
+
+#wpstats {max-height:0px; max-width:0px;}
+
+
+
+/*------------------------------------*\
+    Layout Structure
+\*------------------------------------*/
+
+#desktopBanner {background-color:#333;}
+footer {background-color:#222; color:#999;}
+aside ul {padding:0; margin:.75em 0 0 2em;}
+aside li {margin-bottom:.2em; font-size:.9em; list-style:none; text-indent:-2em;}
+aside a:before {font-family: "FontAwesome"; content:'\f061'; padding-right:1em;}
+p {padding:.5em 0;}
+hr {background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em;}
+
+
+
+.main {padding: 3em 0; margin-bottom:4em; @extend .roundedcorners-small;}
+.entry-content {padding-left:.5em; padding-right:.5em;}
+
+
+
+

@@ -1,0 +1,10 @@
+/*------------------------------------*\
+    Wordpress Login Screen
+\*------------------------------------*/
+
+body.login {background:#333;}
+.login h1 a {background-image: url(../images/bravodms-logo.png);}
+
+.login #nav a, .login #backtoblog a, a, a:link, a:visited, a:hover, a:active {color:#aaa !important; text-decoration:none;}
+
+.login #nav, .login #backtoblog {text-shadow:none;}
