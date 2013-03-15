@@ -10,6 +10,14 @@ Here is a breakdown of the files and what they do:
 
 * index.php - The main page that calls in all other files via the php include command.
 
+* single.php - Formatting for a single Post.
+
+* page.php - Formatting for a Page.
+
+* content-excerpts.php - Formatting for the blog stream.
+
+* comments.php - Setup for RWD Facebook Comments on Posts.
+
 * header.php - Includes the
 	<code>&lt;head&gt;&lt;/head&gt;
 	&lt;body&gt;

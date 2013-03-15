@@ -4,7 +4,7 @@
 	<?php while ( have_posts() ) : the_post(); ?>
 
 
-		<article class="post c33ip">
+		<article class="post c33p">
 	        <?php the_post_thumbnail(); ?>
 	        <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
