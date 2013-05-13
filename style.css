@@ -1,11 +1,11 @@
 @charset "UTF-8";
 /*
-Theme Name: BravoDMS RWD
+Theme Name: Breath of Life
 Theme URI: http://www.bravodms.com/
 Author: Omar J. Bravo (@ojbravo)
 Author URI: http://www.bravodms.com/
 Version: 1.0
-Description: Inspire, Empower, Engage!
+Description: Natural Birth Experience!
 */
 /*------------------------------------*\
     Responsive Wordpress Site Framework
@@ -565,7 +565,7 @@ body, #sideNav, #sideNav a {
 /* Display mainNav */
 /* mainNav background-color */
 #mainNav {
-  height: 75px;
+  height: 50px;
   margin: 0;
   overflow: visible;
   margin: 0;
@@ -600,8 +600,8 @@ body, #sideNav, #sideNav a {
   color: #777777;
   display: block;
   font-size: 12px;
-  height: 75px;
-  line-height: 75px;
+  height: 50px;
+  line-height: 50px;
   padding: 0 2em;
   text-align: center;
 }
@@ -1939,7 +1939,7 @@ img {
   height: auto !important;
 }
 
-#dms-logo {
+#mainlogo {
   max-height: 61px;
   max-width: 274px;
   width: 70%;
@@ -1947,25 +1947,25 @@ img {
   margin: 0.2em 0 0 0;
 }
 
+#mainlogo a:hover {
+  background-color: inherit;
+}
+
 @media screen and (min-width: 768px) {
-  #dms-logo {
+  #mainlogo {
     margin: 0.6em 0;
   }
 }
-a#dms-menu-logo {
+a#menulogo {
   padding-left: 1.25em;
   font-size: 1.5em;
 }
 
-#dms-menu-logo img {
+#menulogo img {
   max-width: 49px;
   max-height: 61px;
   display: inline-block;
   vertical-align: middle;
-}
-
-#dms-logo a:hover {
-  background-color: inherit;
 }
 
 #wpstats {

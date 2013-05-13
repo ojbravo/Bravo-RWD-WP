@@ -18,6 +18,8 @@ Here is a breakdown of the files and what they do:
 
 * comments.php - Setup for RWD Facebook Comments on Posts.
 
+* sidebar.php - Backup file.  Customize the sidebar in the Admin panel.
+
 * header.php - Includes the
 	<code>&lt;head&gt;&lt;/head&gt;
 	&lt;body&gt;

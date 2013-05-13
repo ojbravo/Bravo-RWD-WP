@@ -17,13 +17,16 @@ $menu-bg-color: #ccc;
 $menu-bg-hover: #bbb; /*  */
 $menu-text-color: #777;
 $menu-text-hover: #555; /*  */
-$submenu-bg-color: #999; /*  */
+$menu-height: 50px;
+$submenu-bg-color: #999;
+$submenu-height: 30px; /*  */
 $sidenav-bg-color: #333; /*  */
 $sidenav-bg-hover: #555;
 $mobile-menu-bg: #333;
 $border-light:#eee;
 $border-dark:#aaa;
 $corner-radius: .25em;
+
 
 
 /* Mini Reset */
@@ -100,7 +103,7 @@ body, #sideNav, #sideNav a {background-color:$sidenav-bg-color;}
 #mainNav {display:none; background-color:#fff; background-color: $menu-bg-color;}
 
 	/* Display mainNav */ /* mainNav background-color */
-#mainNav {height:75px; margin:0; overflow:visible; margin:0; padding:0; }
+#mainNav {height:$menu-height; margin:0; overflow:visible; margin:0; padding:0; }
 
 /********************************
 	Format the MainNav Position 
@@ -119,8 +122,8 @@ body, #sideNav, #sideNav a {background-color:$sidenav-bg-color;}
 	color:$menu-text-color;
 	display:block;
 	font-size:12px;
-	height:75px;
-	line-height:75px;
+	height:$menu-height;
+	line-height:$menu-height;
 	padding:0 2em;
 	text-align:center;  
 }
@@ -135,8 +138,8 @@ body, #sideNav, #sideNav a {background-color:$sidenav-bg-color;}
 #mainNav .subMenu a {
 	color:$main-bg-color;
 	font-size:14px;
-	line-height:30px;
-	height:30px;
+	line-height:$submenu-height;
+	height:$submenu-height;
 	text-align:left;
 	padding-left:5%;
 	width:100%;

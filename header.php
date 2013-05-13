@@ -57,7 +57,7 @@
 
 <body <?php body_class(); ?>>
     <nav id="sideNav" class="side-nav-closed">
-        <a id="dms-menu-logo" href="index.php">
+        <a id="menulogo" href="index.php">
             <img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-menu-logo.png" alt="Bravo DMS Menu"> Menu
         </a>
         <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
@@ -70,7 +70,7 @@
                 <a onclick="toggleMenu();" class="menu-icon">
                    <i class="icon-reorder "></i>
                 </a>
-                <div id="dms-logo">
+                <div id="mainlogo">
                     <a href="#">
                         <img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-logo.png" alt="Bravo DMS Logo">
                     </a>
@@ -82,7 +82,7 @@
 
         <header id="desktopBanner" class="desktop-only">
             <div class="c90p float-center">
-                <a id="dms-logo" href="#">
+                <a id="mainlogo" href="#">
                     <img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-logo.png" alt="Bravo DMS Logo">
                 </a>
             </div> 
