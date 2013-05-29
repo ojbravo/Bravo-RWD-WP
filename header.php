@@ -26,16 +26,9 @@
 </title>
 
 
-<!-- Facebook Tags -->
+<!-- Facebook Comments Tags -->
 <meta property='fb:app_id' content="" /> 
 <meta property="fb:admins" content="Facebook Username"/>
-<meta property="og:title" content="Website Name"/>
-<meta property="og:type" content="website"/>
-<meta property="og:url" content="http://www.MyDomain.com/"/>
-<meta property="og:image" content="http://www.MyDomain.com/images/fb-icon.jpg"/>
-<meta property="og:site_name" content="Website Name | Slogan"/>
-<meta property="og:description"
-      content="This is what my site is all about."/>
 <!-- End Facebook Tags -->
 
 <title><?php echo $title ?></title>
