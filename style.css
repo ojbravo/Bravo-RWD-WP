@@ -492,7 +492,7 @@ body, #sideNav, #sideNav a {
 }
 
 /* sideNav hover styles :: light gray */
-#sideNav .subMenu a {
+#sideNav .sub-menu a {
   padding: 0 10% 0 20%;
   width: 100%;
   display: block;
@@ -611,29 +611,29 @@ body, #sideNav, #sideNav a {
   color: #555555;
 }
 
-/* Display subMenu */
-.subMenu {
+/* Display sub-menu */
+.sub-menu {
   overflow: hidden;
   position: relative;
   z-index: 10;
 }
 
-#mainNav li:hover .subMenu {
+#mainNav li:hover .sub-menu {
   overflow: visible;
   position: absolute;
   width: 250px;
 }
 
-/* Make subMenu appear */
-/* background-color for subMenu :: Dark Gray */
-#mainNav .subMenu li {
+/* Make sub-menu appear */
+/* background-color for sub-menu :: Dark Gray */
+#mainNav .sub-menu li {
   background-color: #999999;
   display: block;
   width: 100%;
   border: none;
 }
 
-#mainNav .subMenu a {
+#mainNav .sub-menu a {
   color: #eeeeee;
   font-size: 14px;
   line-height: 30px;
@@ -643,12 +643,12 @@ body, #sideNav, #sideNav a {
   width: 100%;
 }
 
-#mainNav .subMenu a:hover {
+#mainNav .sub-menu a:hover {
   background-color: #cccccc;
   color: #777777;
 }
 
-/* Hover style for subMenu :: Yellow */
+/* Hover style for sub-menu :: Yellow */
 /* Setting Active State for Menu Items */
 @media screen and (min-width: 768px) {
   #mainPage {
@@ -656,12 +656,12 @@ body, #sideNav, #sideNav a {
     padding: 0;
   }
 
-  /* Hides Mobile button, sideNav, & subMenu */
+  /* Hides Mobile button, sideNav, & sub-menu */
   #open-menu, #close-menu, .mobile-menubar, #sideNav {
     display: none;
   }
 
-  .subMenu {
+  .sub-menu {
     height: 0;
   }
 
