@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 /*
-Theme Name: Breath of Life
+Theme Name: BravoDMS
 Theme URI: http://www.bravodms.com/
 Author: Omar J. Bravo (@ojbravo)
 Author URI: http://www.bravodms.com/
 Version: 1.0
-Description: Natural Birth Experience!
+Description: Inspire. Empower. Engage.
 */
 
 
@@ -23,53 +23,92 @@ Description: Natural Birth Experience!
 @import "compass";
 @import "includes/_bravo-grid-v16";
 
-
 /*------------------------------------*\
     Variables & Mixins
 \*------------------------------------*/
+@mixin mq($break-point) {
+    @media screen and (min-width: $break-point) { @content; }
+}
 
-
+$body-bg-color: #fff;
+$sideNav-bg-color: #333;
 
 
 /*------------------------------------*\
     Dependant CSS Files
 \*------------------------------------*/
+
 @import "includes/_toolbox";
 @import "includes/_typography";
-@import "includes/_bravo-menu-v5";
-@import "includes/_font-awesome";
+@import "includes/_bravo-menu-v6";
+
 
 /*------------------------------------*\
-    Images
+    Foundation
 \*------------------------------------*/
-img {max-width:100%; height:auto !important;}
+body {background-color: $sideNav-bg-color;}
 
-#mainlogo {max-height:61px; max-width:274px; width:70%; float:left; margin:.2em 0 0 0;}
-#mainlogo a:hover {background-color:inherit;}
-@media screen and (min-width: 768px){
-  #mainlogo{margin:.6em 0;}
+
+
+/*------------------------------------*\
+    Top Banner
+\*------------------------------------*/
+
+.mainHeader {background-color:#333;}
+.logo {width:75%; margin:.5em 0 0 0; display:inline-block;}
+.logo a:hover {background-color:inherit;}
+@include mq(40em) {
+    .logo{margin:1em 10%;}
 }
 
-a#menulogo {padding-left:1.25em; font-size:1.5em;}
-#menulogo img {max-width:49px; max-height:61px; display:inline-block; vertical-align:middle;}
+
+/*------------------------------------*\
+    Buttons
+\*------------------------------------*/
+
+.download {
+    @include btn(#f63, 1em, .2em); line-height:2em; 
+    i{font-size:1.5em;}
+}
+.download:hover {
+    @include btn(#555, 1em, .2em); line-height:2em; 
+    i{font-size:1.5em;}
+}
+
+/*------------------------------------*\
+    BravoDMS Footer
+\*------------------------------------*/
+
+footer {background-color:#222; color:#999;}
+#copyright { 
+    padding-top:2em; padding-bottom:3em;
+
+    .date, .site-by {text-align:center; margin-bottom:1em;}
+    @media screen and (min-width: 768px) {
+        .date {text-align:left;}
+        .site-by {text-align:right;}
+    }
+}
 
 
-#wpstats {max-height:0px; max-width:0px;}
+/*------------------------------------*\
+    mainNav Icons
+\*------------------------------------*/
+// Remove / Display icons from mainNav.
+@include mq(40em){.mainNav i {display:none;}}
+@include mq(60em){.mainNav i {display:inline-block;}}
 
 
 
 /*------------------------------------*\
-    Layout Structure
+    Wordpress Theme
 \*------------------------------------*/
 
-#desktopBanner {background-color:#333;}
-footer {background-color:#222; color:#999;}
 aside ul {padding:0; margin:.75em 0 0 2em;}
 aside li {margin-bottom:.2em; font-size:.9em; list-style:none; text-indent:-2em;}
-aside a:before {font-family: "FontAwesome"; content:'\f061'; padding-right:1em;}
 p {padding:.5em 0;}
 hr {background-color: #ccc; border: 0; height: 1px; margin-bottom: 1.5em;}
-
+section.c90p {padding-top: 3em; padding-bottom: 3em;}
 
 
 .main {padding: 3em 0; margin-bottom:4em; @extend .roundedcorners-small;}

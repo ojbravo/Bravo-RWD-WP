@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-	<section class="c80p bg-light main">
+	<section class="c90p">
 		<article class="c66p">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>

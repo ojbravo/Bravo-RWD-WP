@@ -31,8 +31,6 @@
 <meta property="fb:admins" content="Facebook Username"/>
 <!-- End Facebook Tags -->
 
-<title><?php echo $title ?></title>
-
 <!-- Icons -->
 <link rel="shortcut icon" type="image/x-icon" href="http://www.bravodms.com/images/favicon.ico"  />
 <link rel="icon" type="image/x-icon" href="http://www.bravodms.com/images/favicon.ico"  />
@@ -42,51 +40,24 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/includes/respond.min.js"></script>
 <![endif]-->
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-    <nav id="sideNav" class="side-nav-closed">
-        <a id="menulogo" href="index.php">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-menu-logo.png" alt="Bravo DMS Menu"> Menu
-        </a>
-        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-    </nav>
-
-    <div id="mainPage" class="main-page-open">
-        
-        <div class="mobile-menubar">                
-            <div id="open-menu">
-                <a onclick="toggleMenu();" class="menu-icon">
-                   <i class="icon-reorder "></i>
-                </a>
-                <div id="mainlogo">
-                    <a href="#">
-                        <img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-logo.png" alt="Bravo DMS Logo">
-                    </a>
-                </div>
-                <div class="clr"></div> 
-            </div>
-        </div><!-- end mobile-menubar -->
-
-
-        <header id="desktopBanner" class="desktop-only">
-            <div class="c90p float-center">
-                <a id="mainlogo" href="#">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-logo.png" alt="Bravo DMS Logo">
-                </a>
-            </div> 
+    
+    <div id="mainPage">
+        <header class="mainHeader group">
+            <a href="#" class="menu-btn" onclick="toggleMenu();"><i class="icon-reorder"></i></a>
+            <div class="logo">
+            	<a href="<?php echo home_url(); ?>">
+            		<img src="<?php echo get_template_directory_uri(); ?>/images/bravodms-logo.png" alt="Bravo DMS Logo">
+            	</a>
+                
+            </div>    
         </header>
-
-
-        <nav id="mainNav">
-            <div class="c90p float-center">
-                <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-                <div class="clr"></div>  
-            </div>
-        </nav>
-        
+        <nav class="mainNav" role='navigation'>
+	        <?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+	    </nav> 
         <div class="line clr"></div>

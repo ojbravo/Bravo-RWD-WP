@@ -2,10 +2,20 @@
     Typography
 \*------------------------------------*/
 
+@font-face{ 
+	font-family: 'OpenSans-Light';
+	src: url('OpenSans-Light-webfont.eot');
+	src: url('OpenSans-Light-webfont.eot?iefix') format('eot'),
+	     url('OpenSans-Light-webfont.woff') format('woff'),
+	     url('OpenSans-Light-webfont.ttf') format('truetype'),
+	     url('OpenSans-Light-webfont.svg#webfont') format('svg');
+}
 
-body {font-family:Century Gothic, Verdana, sans-serif; color:#555; font-size:16px;}
-@media screen and (min-width: 768px) {body{font-size:17px;}}
-@media screen and (min-width: 1200px) {body{font-size:18px;}}
+
+body {font-family:'OpenSans-Light', Century Gothic, Verdana, sans-serif; color:#555; font-size:16px;}
+@include mq(40em){body {font-size:18px;}}
+@include mq(75em){body {font-size:20px;}}
+
 
 h1 {font-size:1.75em;}
 h2 {font-size:1.5em;}
@@ -14,6 +24,6 @@ h4 {font-size:1.1em; font-style:italic;}
 h5 {font-size:.9em;}
 
 a, a:link, a:visited, a:hover, a:active {color:#f60; text-decoration:none;}
-a:hover {color:#ca1500;}
+a:hover {color:#990;}
 
 blockquote {margin:1.5em 2em;}

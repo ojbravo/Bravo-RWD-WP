@@ -8,7 +8,7 @@
  */
 
 get_header(); ?>
-	<section class="c80p bg-light main">
+	<section class="c90p">
 		<article class="c66p">
 			<?php include "content-excerpts.php" ?>
 		</article> 
